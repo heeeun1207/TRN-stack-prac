@@ -1,5 +1,5 @@
 function a (data: number): string {
-  return 'hello'
+  return "hello";
 }
 
-console.log(a(1))
+console.log(a(1));
