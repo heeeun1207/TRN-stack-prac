@@ -16,6 +16,13 @@ body{
   padding: 0;
   box-sizing: border-box;
 }
+
+/* 다크 모드 스타일 */
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 #root{
   width: 100vw;
   height: 100vh;
@@ -28,6 +35,15 @@ body{
 <body>
   <div id="root">
     <h1>나는 신발이 없음을 한탄했는데, </br> 길에서 발이 없는 사람을 만났다.</h1>
-  </div>
+  </div
+
+  <script>
+    const root = document.getElementById('root');
+    const body = document.body;
+
+    root.addEventListener('click', function() {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
